@@ -1,5 +1,31 @@
-body{
+@import "./colors";
+@import "./responsive-mixin";
+
+body {
   margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  padding: 8px 24px 8px 24px;
+  @include breakpoint (mobileonly) {
+    padding: 8px 24px 8px 24px;
+  }
+  @include breakpoint (phablet){
+    padding: 8px 55px 8px 55px;
+  }
+  font-family: "Open Sans", sans-serif;
+}
+input {
+  border-style: solid;
+  border-width: 1.5px;
+  padding: 12px;
+  width: 280px;
+  height: 12px;
+  border-radius: 6px;
+  border-color: $very-dark-blue;
+}
+button {
+  background-color: $bright-blue;
+  color: white;
+  width: 185px;
+  border-style: none;
+  border-radius: 6px;
+  font-weight: bold;
 }

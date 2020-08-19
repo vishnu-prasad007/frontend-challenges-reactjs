@@ -1,7 +1,7 @@
 @import "../../../responsive-mixin";
 @import "../../../colors";
 .header-container {
-  padding: 8px 24px 8px 24px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,6 @@
   }
   @include breakpoint (phablet) {
     font-size: 18px;
-    padding: 0px 16px 0px 16px;
    }
 }
 .right-nav-items:hover {
