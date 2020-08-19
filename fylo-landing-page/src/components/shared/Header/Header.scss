@@ -1,0 +1,47 @@
+@import "../../../responsive-mixin";
+@import "../../../colors";
+.header-container {
+  padding: 8px 24px 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+.header-logo {
+  height: 100%;
+  @include breakpoint (desktop) {
+    width: 5%;
+  }
+  @include breakpoint (laptop) {
+    width: 4%;
+  }
+  @include breakpoint (mobileonly) {
+    width: 16%;
+  }
+  @include breakpoint (phablet) {
+    width: 12%;
+  }
+  @include breakpoint (tablet) {
+    width: 9%;
+  }
+}
+.header-right {
+  display: flex;
+  justify-content: space-evenly;
+}
+.right-nav-items {
+  padding: 0px 24px 0px 24px;
+  @include breakpoint (mobileonly) {
+   font-size: 12px;
+   padding: 0px 16px 0px 16px;
+  }
+  @include breakpoint (phablet) {
+    font-size: 18px;
+    padding: 0px 16px 0px 16px;
+   }
+}
+.right-nav-items:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-color: $bright-blue;
+}
